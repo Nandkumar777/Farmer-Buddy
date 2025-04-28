@@ -1,0 +1,128 @@
+@charset "ISO-8859-1";
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #2e8b57;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i.fa-hands-holding {
+    font-size: 40px;
+    color: #4caf50;
+}
+
+.logo i.fa-seedling {
+    font-size: 30px;
+    color: #8bc34a;
+    margin-left: -40px;
+    margin-top: -15px;
+}
+
+.logo-text {
+    font-size: 30px;
+    color: #ffff99;
+    margin-left: 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo-text a {
+    font-size: 30px;
+    color: #ffff99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-text a:hover {
+    color: #ffeb3b;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffeb3b;
+}
+
+/* Profile Section */
+.profile-section {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-name {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-right: 50px;
+}
+
+.profile-name:hover {
+    background-color: #218838;
+}
+
+/* Dropdown content */
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 110%;
+    background-color: white;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Dropdown links */
+.profile-dropdown a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.profile-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.profile-section:hover .profile-dropdown {
+    display: block;
+}

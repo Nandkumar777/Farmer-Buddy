@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	margin-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* WELCOME BOX */
+.welcome-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+.welcome-box h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.welcome-box p {
+    font-size: 16px;
+}
+
+/* INFO/THEORY SECTION */
+.theory-section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.theory-section h3 {
+    font-size: 20px;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.theory-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.theory-section ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 15px;
+}
+
+.theory-section ul li:last-child {
+    border-bottom: none;
+}
+
+.theory-section p {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+
+    .welcome-box, .theory-section {
+        padding: 20px;
+    }
+
+    .welcome-box h3, .theory-section h3 {
+        font-size: 18px;
+    }
+}

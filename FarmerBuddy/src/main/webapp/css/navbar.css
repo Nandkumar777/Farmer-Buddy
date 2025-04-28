@@ -1,0 +1,65 @@
+@charset "ISO-8859-1";
+.navbar {
+	position: fixed;
+	width: 100%;
+  	top: 0;
+    left: 0;
+	background-color: #2e8b57;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
+}
+
+/* Logo Section */
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo i.fa-hands-holding {
+	font-size: 40px;
+	color: #4caf50;
+}
+
+.logo i.fa-seedling {
+	font-size: 30px;
+	color: #8bc34a;
+	margin-left: -40px;
+	margin-top: -15px;
+}
+
+.logo-text {
+    font-size: 30px;
+    color: #ffff99;
+    margin-left: 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* optional nice glow effect */
+}
+
+.navbar .menu a {
+	color: white;
+	text-decoration: none; 
+	margin-right: 50px;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+
+.navbar .menu a:hover {
+	color: #ffeb3b;
+}
+
+.logo-text a {
+  font-size: 30px;
+  color: #ffff99;
+  text-decoration: none;
+  font-weight: bold;
+}
+.logo-text a:hover {
+  color: #ffeb3b;
+}
+
+
